@@ -6,12 +6,12 @@ const Frase = (props) => {
         <Card className="bg-dark px-3 shadow">
             <Card.Header></Card.Header>
             <Card.Body>
-                <div className="row shadow bg-warning">
+                <div className="row bg-warning">
                     <div className="col-sm-12 col-md-4">
                         <img src={props.personaje.image} alt=""></img>
                     </div>
-                    <div className="col-sm-12 col-md-8">
-                        <Card.Title>{props.personaje.character}</Card.Title>
+                    <div className="col-sm-12 col-md-8 my-5">
+                        <Card.Title className="my-5">{props.personaje.character}</Card.Title>
                         <Card.Text>
                             {props.personaje.quote}
                     </Card.Text>
